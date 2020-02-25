@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html>
+<link rel= "stylesheet" href="css/TechnicalDocumentationPage.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<body>
+<nav id="navbar">
+   <header>Object-Oriented Programming (OOP)</header>
+  <ul>
+    <li><a class="nav-link" href="#What_is_OOP?">What is OOP?</a></li>
+    <li>
+      <a class="nav-link" href="#Principles_of_OOP">Principles of OOP</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#Object-oriented_programming_languages">Object-oriented programming languages</a>
+    </li>
+    <li><a class="nav-link" href="#Early_OOP_Simula">Early OOP Simula</a></li>
+    <li><a class="nav-link" href="#Criticism_of_OOP">Criticism of OOP</a></li>
+    <li>
+      <a class="nav-link" href="#Advantages_of_OOP">Advantages of OOP</a>
+    </li>
+    <li><a class="nav-link" id="last" href="#Reference">Reference</a></li>
+  </ul>
+</nav>
+  
+<main id="main-doc">
+  <section class="main-section" id="What_is_OOP?">
+    <header>What is OOP?</header>
+    <article>
+      <p>
+ Object-oriented programming (OOP) is a programming language model in which programs are organized around data, or objects, rather than functions and logic. An object can be defined as a data field that has unique attributes and behavior. Examples of an object can range from physical entities, such as a human being that is described by properties like name and address, down to small computer programs, such as widgets. This opposes the historical approach to programming where emphasis was placed on how the logic was written rather than how to define the data within the logic.
+      </p>
+
+      <p>
+The first step in OOP is to identify all of the objects a programmer wants to manipulate and how they relate to each other, an exercise often known as data modeling. Once an object is known, it is generalized as a class of objects that defines the kind of data it contains and any logic sequences that can manipulate it. Each distinct logic sequence is known as a method and objects can communicate with well-defined interfaces called messages.
+      </p>
+       <p>
+      Simply put, OOP focuses on the objects that developers want to manipulate rather than the logic required to manipulate them. This approach to programming is well-suited for programs that are large, complex and actively updated or maintained. Due to the organization of an object-oriented program, this method is also conducive to collaborative development where projects can be divided into groups. Additional benefits of OOP include code reusability, scalability  and efficiency.
+ </p>
+    
+    </article>
+  </section>
+  <section class="main-section" id="Principles_of_OOP">
+    <header>Principles of OOP</header>
+    <article>
+      <p>Object-oriented programming is based on the following principles:</p>
+
+      <ul>
+        <li>
+        <b>Encapsulation </b>- The implementation and state of each object are privately held inside a defined boundary, or class. Other objects do not have access to this class or the authority to make changes but are only able to call a list of public functions, or methods. This characteristic of data hiding provides greater program security and avoids unintended data corruption.
+        </li>
+        <li><b>Abstraction</b> - Objects only reveal internal mechanisms that are relevant for the use of other objects, hiding any unnecessary implementation code. This concept helps developers make change</b> s and additions over time more easily.</li>
+        <li>
+<b>Inheritance</b> - Relationships and subclasses between objects can be assigned, allowing developers to reuse a common logic while still maintaining a unique hierarchy. This property of OOP forces a more thorough data analysis, reduces development time and ensures a higher level of accuracy.
+        </li>
+         <li>
+        <b>Polymorphism</b> - Objects are allowed to take on more than one form depending on the context. The program will determine which meaning or usage is necessary for each execution of that object, cutting down on the need to duplicate code.
+    </li>
+    </article>
+   
+ 
+  </section>
+  <section class="main-section" id="Object-oriented_programming_languages">
+    <header>Object-oriented programming languages</header>
+    <article>
+      <p>
+       While Simula is credited as the first object-oriented programming language, the most popular OOP languages are:
+      </p>
+<ul>
+  <li>Java
+     </li>
+ <li>JavaScript
+   </li>
+ <li>Python
+  </li>
+ <li>C++
+   </li>
+ <li>Visual Basic .NET
+   </li>
+ <li>Ruby
+   </li>
+ <li>Scala
+    </li>
+ <li>PHP
+   </li>
+      </ul>
+      <br>
+    OOPSLA is the annual conference for Object-Oriented Programming Systems, Languages and Applications.
+    </article>
+  </section>
+  <section class="main-section" id="Early_OOP_Simula">
+    <header>Early OOP Simula</header>
+    <article>
+     
+      <p>Simula is the name of two simulation programming languages, Simula I and Simula 67, developed in the 1960s at the Norwegian Computing Center in Oslo, by Ole-Johan Dahl and Kristen Nygaard. Syntactically, it is a fairly faithful superset of ALGOL 60,also influenced by the design of Simscript.</p>
+       <p>Simula is considered the first object-oriented programming language. As its name suggests, Simula was designed for doing simulations, and the needs of that domain provided the framework for many of the features of object-oriented languages today.</p>
+<p>
+Simula 67 introduced objects, classes,inheritance and subclasses, virtual procedures, coroutines, and discrete event simulation, and features garbage collection. Also other forms of subtyping (besides inheriting subclasses) were introduced in Simula derivatives.</p><br>
+    
+        <h3>Classes, subclasses and virtual procedures</h3><br>
+<p>A more realistic example with use of classes,subclasses and virtual procedures:</p>
+
+      <code>
+<pre><b>Begin</b>
+   <b>OutText</b> ("Hello, World!");
+   <b>Outimage</b>;
+<b>End</b>;
+</pre>
+      </code><br>
+        <p>Simula is case-insensitive.</p><br>
+    <h3>Classic Hello world</h3><br>
+<p>An example of a Hello world program in Simula:</p>
+
+      <code><pre><b>Begin</b>
+   <b>Class</b> Glyph;
+      <b>Virtual</b>: <b>Procedure</b> print <b>Is</b> <b>Procedure</b> print;;
+   <b>Begin</b>
+   <b>End</b>;
+</pre></code>
+<code><pre>Glyph <b>Class</b> Line (elements);
+      <b>Ref</b> (Glyph) <b>Array</b> elements;
+   <b>Begin</b>
+      <b>Procedure</b> print;
+      <b>Begin</b>
+         <b>Integer</b> i;
+         <b>For</b> i:= 1 <b>Step</b> 1 <b>Until</b> UpperBound (elements, 1) <b>Do</b>
+            elements (i).print;
+         OutImage;
+      <b>End</b>;
+   <b>End</b>;
+</pre>
+       </code>
+<code><pre>   <b>Ref</b> (Glyph) rg;
+   <b>Ref</b> (Glyph) <b>Array</b> 
+</pre></code>
+<code><pre>   <i>! Main program;</i>
+   rgs (1):- <b>New</b> Char ('A');
+   rgs (2):- <b>New</b> Char ('b');
+   rgs (3):- <b>New</b> Char ('b');
+   rgs (4):- <b>New</b> Char ('a');
+   rg:- <b>New</b> Line (rgs);
+   rg.print;
+<b>End</b>;
+</pre></code>
+  <p>The above example has one super class (Glyph) with two subclasses (Char and Line). There is one virtual procedure with two implementations. The execution starts by executing the main program. Simula does not have the concept of abstract classes since classes with pure virtual procedures can be instantiated. This means that in the above example all classes can be instantiated. Calling a pure virtual procedure will however produce a run-time error.</p><br>
+    
+     <h3>Call by name</h3><br>
+<p>Simula supports call by name so the Jensen's Device can easily be implemented. However, the default transmission mode for simple parameter is call by value, contrary to ALGOL which used call by name. The source code for the Jensen's Device must therefore specify call by name for the parameters when compiled by a Simula compiler. <br>Another much simpler example is the summation function sum  which can be implemented as follows:</p>
+      <code>
+        <pre><b>Real</b> <b>Procedure</b> Sigma (k, m, n, u);
+   <b>Name</b> k, u;
+   <b>Integer</b> k, m, n; <b>Real</b> u;
+<b>Begin</b>
+   <b>Real</b> s;
+   k:= m;
+   <b>While</b> k &lt;= n <b>Do</b> <b>Begin</b> s:= s + u; k:= k + 1; <b>End</b>;
+   Sigma:= s;
+<b>End;</b>
+</pre>
+</code>
+<p>The above code uses call by name for the controlling variable (k) and the expression (u). This allows the controlling variable to be used in the expression.
+
+Note that the Simula standard allows for certain restrictions on the controlling variable in a for loop. The above code therefore uses a while loop for maximum portability.<br>
+
+The following:</p>
+  <img id="img" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7e5b4b37fb90cdd6177be7f4c3b1e2f037b248fa" alt="sum"><br> 
+        <p>
+can then be implemented as follows:<br><br>
+          
+Z:= Sigma (i, 1, 100, 1 / (i + a) ** 2);<br>
+  </p>
+  <p>As you see above the terminology used for some important concepts in Simula is different from what later
+become the norm in O-O programming. This has had the unfortunate effect that most articles,
+books and papers about Simula have been difficult to read for those only knowing the
+“standard” terminology used today. </p>
+  </article>
+  </section>
+       
+  <section class="main-section" id="Criticism_of_OOP">
+    <header>Criticism of OOP</header>
+    <article><p>
+      The idea of object-oriented programming has been criticized by developers for multiple reasons. The largest concern is that OOP overemphasizes the data component of software development and does not focus enough on computation or algorithms. Additionally, OOP code may be more complicated to write and take longer to compile. Alternative methods to OOP include functional programming, structured programming  and  imperative programming, but most advanced programming languages give developers the option to combine them.
+    </p> 
+    </article>
+  </section>
+      
+ 
+  <section class="main-section" id="Advantages_of_OOP">
+    <header>Advantages of OOP</header>
+    <article><p>
+      Object-Oriented Programming has the following advantages over conventional approaches:
+
+OOP provides a clear modular structure for programs which makes it good for defining abstract datatypes where implementation details are hidden and the unit has a clearly defined interface.
+OOP makes it easy to maintain and modify existing code as new objects can be created with small differences to existing ones.
+OOP provides a good framework for code libraries where supplied software components can be easily adapted and modified by the programmer. This is particularly useful for developing graphical user interfaces.
+    </p>
+  </article> 
+  </section>
+
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+     All the documentation in this page is taken from
+  <a         href="https://searchapparchitecture.techtarget.com/definition/object-oriented-programming-OOP"
+            target="_blank"
+            >SAA </a> , <a href="https://en.wikipedia.org/wiki/Simula" target="_blank">Wikipedia</a> and <a href="https://wiki.tcl-lang.org/page/Advantages+and+Disadvantages+of+OOP" target= "_blank">Tcler's Wiki.</a>
+    </article>
+  </section>
+   <footer>
+    <article><p>Copyright &#169; <time datetime="2019">2019</time> by I.C. All rights reserved.</p>
+		<p>See the code on <a href="https://codepen.io/cruduiuliana/pen/ExxpKob">codepen</a>.</p>
+ </article>
+	</footer>
+</main>
+</body>
+</html>
